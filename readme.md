@@ -115,7 +115,7 @@ fuzzy_system_comparison/
 │   └── results/                 # Evaluation plots and metrics
 │
 └── README.md                    # Project documentation
----
+```
 
 ## Arka Plan
 
