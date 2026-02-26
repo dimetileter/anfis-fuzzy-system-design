@@ -44,7 +44,7 @@ net bir şekilde ortaya koymaktadır.
 
 <p align="center">
   <img src="results/expert_system_mdoel_surface_1.png" width="45%">
-  <img src="results/expert_system_mdoel_sueface_2.png" width="45%">
+  <img src="results/expert_system_mdoel_surface_2.png" width="45%">
 </p>
 
 
@@ -98,23 +98,32 @@ ve insan kaynaklı belirsizlikler performansı olumsuz etkileyebilmektedir.
 ```
 fuzzy_system_comparison/
 │
-├── expert_fis/                  # Expert-based FIS implementation
-│   ├── expert_fis.m             # MATLAB script for expert FIS
-│   └── expert_fis_rules.txt      # Rule base definition
+├── anfis_system/                
+│   ├── ANFIS.fis                
+│   └── Egitim.mlx               
 │
-├── anfis_model/                 # ANFIS implementation
-│   ├── anfis_training.m         # MATLAB script for ANFIS training
-│   └── anfis_results/            # Training results and plots
+├── data/                        
+│   ├── Egitim_Verisi.xlsx       
+│   └── Test_Verisi.xlsx                     
 │
-├── data/                        # Dataset generation and management
-│   ├── generate_data.m          # Script to create training/test data
-│   └── dataset.mat              # Generated dataset
+├── expert_system/               
+│   ├── MyFis.fis               
 │
-├── evaluation/                  # Performance evaluation scripts
-│   ├── evaluate_models.m        # Comparison script
-│   └── results/                 # Evaluation plots and metrics
+├── results/               
+│   ├── anfis_prediction_model_surface.png               
+│   └── anfis_system_performance.png
+│   └── expert_system_model_surfacee_2.png
+│   └── expert_system_model_surface_1.png
+│   └── expert_system_metrics.png
+│   └── expert_system_performance.png
+│   └── original_Bohachevsky_Function_surface.png
 │
-└── README.md                    # Project documentation
+│
+├── scripts/             
+│   ├── EvalfisOrnekCiktilar.m
+│   └── VeriUretimKodlari.m
+│
+└── README.md             
 ```
 
 ## Arka Plan
